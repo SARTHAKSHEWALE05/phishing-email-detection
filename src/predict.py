@@ -17,9 +17,8 @@ def predict_email(model_file, vectorizer_file, email_text):
     return "Phishing Email" if prediction[0] == 1 else "Safe Email"
 
 if __name__ == "__main__":
-    # email_text = " Looks and sounds a hell of a lot like Clare's cat, Violence...A tall tail or is it a prowling panther?"
-    # email_text = "Protect your financial well-being."
-    email_text = "Your account has been suspended. Click here to reset password."
+    email_text = " Looks and sounds a hell of a lot like Clare's cat, Violence...A tall tail or is it a prowling panther?"
+    # email_text = "Your account has been suspended. Click here to reset password."
 
     # result = predict_email("models/phishing_detector.pkl", "data/preprocessed_data.pkl", email_text)
 

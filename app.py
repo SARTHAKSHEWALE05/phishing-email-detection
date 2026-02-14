@@ -36,5 +36,5 @@ def predict():
     return render_template("index.html",prediction=result,confidence=f"{confidence:.2f}",alert_type=alert_type)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=5000)
 
