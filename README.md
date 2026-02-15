@@ -128,7 +128,7 @@ http://127.0.0.1:5000
 
 **🌐 Deployment**
 
-This application can be deployed on:
+This application is deployed on:
 \
 Render
 
@@ -151,14 +151,6 @@ _✨ Features_
 **📌 Important Note**
 
 Large model files (.pkl) are not included in the repository due to GitHub size limits.
-
-_Please run:_
-
-* python src/preprocess.py
-* python src/train.py
-
-\
-before starting the application.
 
 **👨‍💻 Author**
 
