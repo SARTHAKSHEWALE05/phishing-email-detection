@@ -1,179 +1,166 @@
+***📧 Phishing Email Detection using Machine Learning***
 
-📧 Phishing Email Detection using Machine Learning
-🔍 Project Overview
+**🔍 Project Overview**
 
-This project detects phishing emails using Machine Learning and Natural Language Processing (TF-IDF).
+* This project detects phishing emails using Machine Learning and Natural Language Processing (TF-IDF).
+* The system classifies emails into:
 
-The system classifies emails into:
+    * ✅ Legitimate Email \
+    * ⚠  Phishing Email
 
-✅ Legitimate Email
+* It also displays a confidence score (%) for each prediction.
+* The project is deployed as a Flask web application with Bootstrap UI.
 
-⚠ Phishing Email
 
-It also displays a confidence score (%) for each prediction.
+**🚀 Live Demo**
 
-The project is deployed as a Flask web application with Bootstrap UI.
+_https://phishing-email-detection-6onj.onrender.com_
 
-🚀 Live Demo
 
-👉 (Add your Render link here after deployment)
-Example:
+**🛠 Tech Stack**
 
-https://phishing-email-detector.onrender.com
+* Python
+* Scikit-learn
+* Pandas
+* NumPy
+* Flask
+* Bootstrap 5
+* Gunicorn (for deployment)
 
-🛠 Tech Stack
+**🧠 How It Works**
 
-Python
-
-Scikit-learn
-
-Pandas
-
-NumPy
-
-Flask
-
-Bootstrap 5
-
-Gunicorn (for deployment)
-
-🧠 How It Works
 1️⃣ Text Preprocessing
 
-Cleans email text
-
-Converts text into numerical vectors using TF-IDF Vectorization
+* Cleans email text
+* Converts text into numerical vectors using TF-IDF Vectorization
 
 2️⃣ Model Training
 
-Uses Random Forest Classifier
-
-Splits dataset into training and testing sets
-
-Evaluates using Accuracy Score
+* Uses Random Forest Classifier
+* Splits dataset into training and testing sets
+* Evaluates using Accuracy Score
 
 3️⃣ Prediction
 
-Takes user input email
+* Takes user input email
+* Transforms text using saved TF-IDF vectorizer
+* Predicts:
+\
+    * Phishing ⚠
+    \
+    * Legitimate ✅
 
-Transforms text using saved TF-IDF vectorizer
+* Displays confidence probability
 
-Predicts:
+**📊 Model Performance**
 
-Phishing ⚠
+_Algorithm: Random Forest Classifier_
 
-Legitimate ✅
+_Feature Extraction: TF-IDF_
 
-Displays confidence probability
+_Evaluation Metric: Accuracy Score_
 
-📊 Model Performance
+* Example:
 
-Algorithm: Random Forest Classifier
+_**Model Accuracy: 0.94**_
 
-Feature Extraction: TF-IDF
+* 📂 Project Structure \
+phishing-email-detection/ \
+│\
+├── app.py \
+├── requirements.txt\
+├── .gitignore\
+│\
+├── data/\
+│   └── Phishing_Email.csv\
+│\
+├── src/\
+│   ├── preprocess.py \
+│   ├── train.py  
+│   ├── predict.py \
+│\
+├── templates/\
+│   └── index.html 
 
-Evaluation Metric: Accuracy Score
-
-(You can add your actual accuracy value here)
-
-Example:
-
-Model Accuracy: 0.94
-
-📂 Project Structure
-phishing-email-detection/
-│
-├── app.py
-├── requirements.txt
-├── .gitignore
-│
-├── data/
-│   └── Phishing_Email.csv
-│
-├── src/
-│   ├── preprocess.py
-│   ├── train.py
-│   ├── predict.py
-│
-├── templates/
-│   └── index.html
-
-⚙ Installation & Setup Guide
+**⚙ Installation & Setup Guide**
+\
 1️⃣ Clone the Repository
+\
 git clone https://github.com/SARTHAKSHEWALE05/phishing-email-detection.git
+\
 cd phishing-email-detection
 
-2️⃣ Create Virtual Environment
+2️⃣ Create Virtual Environment \
 python -m venv venv
 
 
-Activate:
+_Activate:_
 
-Windows:
-
+* Windows:
+\
 venv\Scripts\activate
 
 
-Mac/Linux:
-
+* Mac/Linux:
+\
 source venv/bin/activate
 
 3️⃣ Install Dependencies
+\
 pip install -r requirements.txt
 
 4️⃣ Preprocess Dataset
+\
 python src/preprocess.py
 
 5️⃣ Train the Model
+\
 python src/train.py
 
 6️⃣ Run the Web Application
+\
 python app.py
 
 
-Open in browser:
+_Open in browser:_
 
 http://127.0.0.1:5000
 
-🌐 Deployment
+**🌐 Deployment**
 
 This application can be deployed on:
-
+\
 Render
 
-Railway
-
-PythonAnywhere
-
-Deployment uses:
+_Deployment uses:_
 
 gunicorn app:app
 
-✨ Features
+_✨ Features_
 
-Email Classification (Phishing / Legitimate)
+* Email Classification (Phishing / Legitimate)
 
-Confidence Score Display
+* Confidence Score Display
 
-Clean Bootstrap UI
+* Clean Bootstrap UI
 
-Modular Code Structure
+* Modular Code Structure
 
-Deployment Ready
+* Deployment Ready
 
-📌 Important Note
+**📌 Important Note**
 
 Large model files (.pkl) are not included in the repository due to GitHub size limits.
 
-Please run:
+_Please run:_
 
-python src/preprocess.py
-python src/train.py
+* python src/preprocess.py
+* python src/train.py
 
-
+\
 before starting the application.
 
-👨‍💻 Author
+**👨‍💻 Author**
 
 Sarthak Shewale
 Third-Year Computer Engineering Student
