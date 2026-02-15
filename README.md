@@ -117,6 +117,26 @@ python src/preprocess.py
 \
 python src/train.py
 
+_(Optional) Use CLI prediction tool_
+
+* Run:
+\
+python src/predict.py
+
+
+* Then paste an email when prompted, for example:
+
+* " Your account has been compromised. Click here to reset your password. "
+
+
+* You’ll get:
+
+  1. Prediction: Phishing / Legitimate
+
+  2. Confidence score
+
+* Perfect for quick testing & debugging 💡
+
 6️⃣ Run the Web Application
 \
 python app.py
