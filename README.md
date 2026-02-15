@@ -5,7 +5,7 @@
 * This project detects phishing emails using Machine Learning and Natural Language Processing (TF-IDF).
 * The system classifies emails into:
 
-    * ✅ Legitimate Email \
+    * ✅ Legitimate Email 
     * ⚠  Phishing Email
 
 * It also displays a confidence score (%) for each prediction.
@@ -45,9 +45,9 @@ _https://phishing-email-detection-6onj.onrender.com_
 * Takes user input email
 * Transforms text using saved TF-IDF vectorizer
 * Predicts:
-\
+
     * Phishing ⚠
-    \
+    
     * Legitimate ✅
 
 * Displays confidence probability
@@ -62,7 +62,7 @@ _Evaluation Metric: Accuracy Score_
 
 * Example:
 
-_**Model Accuracy: 0.94**_
+   _**Model Accuracy: 0.94**_
 
 * 📂 Project Structure \
 phishing-email-detection/ \
@@ -83,14 +83,16 @@ phishing-email-detection/ \
 │   └── index.html 
 
 **⚙ Installation & Setup Guide**
-\
+
+
 1️⃣ Clone the Repository
 \
 git clone https://github.com/SARTHAKSHEWALE05/phishing-email-detection.git
 \
 cd phishing-email-detection
 
-2️⃣ Create Virtual Environment \
+2️⃣ Create Virtual Environment (Optional)
+\
 python -m venv venv
 
 
@@ -148,13 +150,11 @@ http://127.0.0.1:5000
 
 **🌐 Deployment**
 
-This application is deployed on:
-\
-Render
+This application is deployed on: Render
 
 _Deployment uses:_
 
-gunicorn app:app
+  * gunicorn app:app
 
 _✨ Features_
 
@@ -174,6 +174,6 @@ Large model files (.pkl) are not included in the repository due to GitHub size l
 
 **👨‍💻 Author**
 
-Sarthak Shewale
-Third-Year Computer Engineering Student
+Sarthak Shewale\
+Third-Year Computer Engineering Student\
 Amrutvahini College Of Engineering Sangamner
